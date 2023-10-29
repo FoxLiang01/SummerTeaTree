@@ -1,9 +1,11 @@
 import './homepage.css'
+import Header from '../../components/header/header'
 
 function homepage() {
   return (
     <div>
-      homepage
+      <Header/>
+      首页
     </div>
   );
 }
