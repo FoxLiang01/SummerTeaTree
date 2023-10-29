@@ -1,14 +1,11 @@
+import * as NavigationMenu from '@radix-ui/react-navigation-menu'
 import './header.css'
 
-function header() {
+const header = () => {
     let list = ['首页','原创','同人']
 
     return (
-        <div class="header-container">{
-            list.map(item => {
-                return <div>{item}</div>
-            })
-        }</div>
+
     );
 }
 
