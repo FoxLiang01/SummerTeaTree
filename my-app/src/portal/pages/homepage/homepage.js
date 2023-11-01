@@ -1,13 +1,15 @@
 import './homepage.css'
-import Header from '../../components/header/header'
+// import Header from '../../components/header/header'
+import React from 'react';
 
-function homepage() {
+function Homepage() {
   return (
     <div>
-      <Header/>
-      首页
+      <h1 className='homepage-title'>
+        SummerTeaTree
+      </h1>
     </div>
   );
 }
 
-export default homepage;
+export default Homepage;

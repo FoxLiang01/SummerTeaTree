@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import ErrorPage from './shared/errorPage/errorPage'
 import Homepage from './portal/pages/homepage/homepage'
+import Header from './portal/components/header/header'
 import SideBar from './dashboard/components/sideBar/sideBar'
 import Home from './dashboard/pages/home/home'
 
@@ -18,17 +19,24 @@ const router = createBrowserRouter([
   {
     //门户首页
     path: "/",
-    element: <Homepage/>,
-    errorElement:<ErrorPage/>
+    element: <Header/>,
+    errorElement:<ErrorPage/>,
+    children:[
+      // protal(门户)的首页
+      {
+        path: "",
+        element: <Homepage/>,
+      }
+    ]
   },{
     path: "/dashboard",
     element: <SideBar/>,
     errorElement:<ErrorPage/>,
     children:[
-      // dashboard的首页
+      // dashboard(后台)的首页
       {
         path: "",
-        element: <Home />,
+        element: <Home/>,
       }
     ]
   },
