@@ -1,5 +1,5 @@
 {
-  "name": "my-nextjs-app",
+  "name": "my-next-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,14 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "antd": "^5.10.3",
+    "antd": "^5.11.0",
     "next": "14.0.1",
     "react": "^18",
-    "react-dom": "^18"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.0.1",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0"
+    "react-dom": "^18",
+    "remixicon": "^3.5.0"
   }
 }
