@@ -38,6 +38,18 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+
+  --default-background-color:#FAF9F2;
+  --default-light-grey:#f0efe8;
+  --default-darker-grey:#c7c6bf;
+  --default-dark-grey:#5c5c5c;
+  --default-dark:#333333;
+  --default-vivid-green:#4CAF50;
+  --default-bright-green:#e6f7c4;
+  --default-light-green:#C2DA91;
+  --default-darker-green:#a4bc75;
+  --default-dark-green:#7a914c;
+  --default-border-radius:10px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -87,13 +99,14 @@ body {
 
 body {
   margin: 0;
-  color: rgb(var(--foreground-rgb));
+  background-color: var(--default-background-color);
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }
 
 a {
@@ -105,4 +118,8 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  color: var(--default-dark);
 }

@@ -1,0 +1,65 @@
+.login-container{
+    width:600px;
+    border-radius: 20px;
+    z-index: 100;
+
+    position:absolute;
+    right:10%;
+    top:50%;
+    transform: translateY(-50%);
+    
+
+    background-color: rgba(255, 255, 255, 0.7); /* 半透明的白色背景 */
+    backdrop-filter: blur(5px); /* 模糊效果 */
+    transition: backdrop-filter 0.5s; /* 添加渐变效果 */
+}
+
+.text-container{
+    margin: 3rem 0 1rem 0;
+}
+
+.text-h2{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.text-h1{
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.text-p{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.loginForm.show-loginForm{
+    display: block;
+    transition: all ease-in-out 0.5s;
+}
+
+.loginForm.hide-loginForm{
+    display: none;
+    transition: all ease-in-out 0.5s;
+}
+
+/* 修改组件样式 */
+/*  */
+.ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover{
+    color: #fff;
+    background-color: var(--default-darker-green);
+    border:none;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+    background-color: var(--default-darker-green);
+    border-color: var(--default-darker-green);
+}
+
+.ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-inner, .ant-checkbox:not(.ant-checkbox-disabled):hover .ant-checkbox-inner{
+    border-color: var(--default-darker-green);
+}
+
+.ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-checked:not(.ant-checkbox-disabled) .ant-checkbox-inner{
+    background-color: var(--default-darker-green);
+}

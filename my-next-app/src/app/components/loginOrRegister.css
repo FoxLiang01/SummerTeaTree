@@ -1,0 +1,37 @@
+.switch-conatiner{
+    background-color: var(--default-bright-green);
+    display: inline-flex;
+    padding: 7px 10px;
+    border-radius: 30px;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.switch-text{
+    display: inline;
+    width: 48%;
+    padding: 5px 0;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.switch{
+    box-sizing: border-box;
+    position: absolute;
+    width: 24%;
+    height: 1.9rem;
+    background-color: var(--default-darker-green);
+    border-radius: 20px;
+    z-index: 5;
+    transition: all ease-in-out 0.5s;
+}
+
+.switch.on{
+    transform: translateX(95%);
+    transition: all ease-in-out 0.5s;
+}
+
+.switch-text.on{
+    color: #fff;
+    transition: all ease-in-out 0.5s;
+}

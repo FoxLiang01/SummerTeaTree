@@ -1,0 +1,26 @@
+.sidebar-container{
+    width: 250px;
+    height: 100%;
+    /* margin: .7rem; */
+    /* padding: 10px; */
+    background-color: var(--default-background-color);
+    border-right: 1px solid var(--default-darker-grey);
+}
+
+.menu{
+    border-radius: 20x;
+}
+
+.sidebar-header{
+    display: flex;
+    justify-content: end;
+    padding: 1rem;
+    border-bottom: 1px solid var(--default-darker-grey);
+    /* margin: .7rem; */
+    /* border-radius: 10px; */
+    /* background-color: var(--default-light-green); */
+}
+
+.sidebar-header-item{
+    margin-right: .7rem;
+}
