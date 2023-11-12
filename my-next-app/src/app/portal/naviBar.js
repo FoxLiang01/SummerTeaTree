@@ -1,6 +1,8 @@
 "use client"
 import { Menu,ConfigProvider } from "antd"
 import { Dancing_Script } from 'next/font/google'
+import { useContext } from "react"
+import { authContext } from "../auth-context"
  
 const dancingScript = Dancing_Script({
   weight: '700',
@@ -63,6 +65,10 @@ const items = [
   ];
 
 export default function Navigation({children}){
+  const auth = useContext(authContext);
+  //这里使用auth的isloggedin来判断显示目录或者别的什么，在其他模块也可以这样用哦
+  //比如{auth.isloggedin? '':''}什么的
+
     return(
       <div>
         <section style={{display:"flex",alignItems:"center",paddingTop:"10px"}}>

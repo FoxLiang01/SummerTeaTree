@@ -1,5 +1,5 @@
 
-import Navigation from "./naviBar"
+import Navigation from "./portal/naviBar"
 
 export default function HomePage() {
   return (
